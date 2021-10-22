@@ -29,7 +29,7 @@
                                                 <div>
                                                     <v-menu ref="menu" v-model="menu" :close-on-content-click="false" transition="scale-transition" offset-y min-width="auto">
                                                         <template v-slot:activator="{ on, attrs }">
-                                                            <v-text-field v-model="birthDay" locale="th" :label="lableBirthDay" prepend-icon="mdi-calendar" readonly outlined dense v-bind="attrs" v-on="on"></v-text-field>
+                                                            <v-text-field v-model="birthDay" locale="th" :label="lableBirthDay" readonly outlined dense v-bind="attrs" v-on="on"></v-text-field>
                                                         </template>
                                                         <v-date-picker locale="th" v-model="birthDay" :active-picker.sync="activePicker" :max="(new Date(Date.now() - (new Date()).getTimezoneOffset() * 60000)).toISOString().substr(0, 10)" min="1950-01-01" @change="save"></v-date-picker>
                                                     </v-menu>
@@ -57,7 +57,7 @@
                                         <v-text-field :label="lableAdress1" :placeholder="placeholderAdress1" outlined dense :maxlength="20" v-model="Adress1"></v-text-field>
                                         </v-flex>
                                         <v-flex md12>
-                                        <ThailandAutoComplete v-model="zipcode" type="zipcode" @select="select" label="รหัสไปรษณีย์" size="medium" placeholder="รหัสไปรษณีย์..."/>
+                                        <ThailandAutoComplete v-model="zipcode" type="zipcode" @select="select" label="รหัสไปรษณีย์" placeholder="รหัสไปรษณีย์"/>
                                         </v-flex>
                                            
                                         <v-flex md12 style="color: #0277bd;" class="d-flex align-left justify-left pa-1 mx-auto">
@@ -66,7 +66,11 @@
                                         <v-flex md12>
                                         <v-text-field :label="lableEmail" :placeholder="placeholderEmail" outlined dense :maxlength="50" v-model="Email"></v-text-field>
                                         </v-flex>
-
+                                    <v-layout align-content-center style="color: #0277bd; font-size: 12px; margin-top:-20px;">
+                                        <v-flex class="d-flex justify-left pa-1 mx-auto">
+                                           * โปรดตรวจสอบความถูกต้อง<br>เมื่อท่านกดยืนยันข้อมูลจะไม่สามารถกลับมาแก้ไขได้
+                                        </v-flex>
+                                    </v-layout>
                                            
                                         
                                         <!-- <ThailandAutoComplete v-model="district" type="district" @select="select" label="ตำบล" size="medium" placeholder="ตำบล..."/>
