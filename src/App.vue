@@ -24,6 +24,22 @@
                       ></v-img>
                     </v-flex>
                   </div>
+
+                   
+      <v-layout align-content-center style="color: #0277bd;">
+        <v-flex >
+
+        
+ข้อกำหนดและเงือนไขการลงทะเบียน
+       
+
+        </v-flex>
+
+
+                      
+                   </v-layout>
+
+
                   <v-container fluid >
                      <v-col
                       cols="12"
