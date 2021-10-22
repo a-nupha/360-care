@@ -1,13 +1,11 @@
 <template>
   <v-app id="app">
 
-    <registerConsent/>
-    
-    <!-- ตัวสลับคอมโพแนน
    <transition name="component-fade" mode="out-in">
               <component v-bind:is="z"></component>
     </transition>
-    -->
+                  
+    
 
     <v-footer app bottom absolute padless>
       <v-card flat tile width="100%" class="primary lighten-1 text-center">
@@ -26,25 +24,33 @@
 import { mapState } from "vuex";
 import { sync } from "vuex-pathify";
 import registerConsent from './components/registerConsent.vue';
+import applicationFrom from './components/applicationFrom.vue';
+
+
 
 export default {
   name: "App",
 
   components: {
     registerConsent,
+    applicationFrom,
   },
   computed: {
     ...mapState({
+      page: store => store.getApi.page,
     }),
     ...sync("*"),
   },
   data: () => ({
-    //
-
+    
   }),
-  watch: {},
+  watch: {
+
+  },
   mounted() {},
   created() {},
-  methods: {},
+  methods: {
+
+  },
 };
 </script>

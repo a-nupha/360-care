@@ -10,6 +10,8 @@ pathify.options.mapping = 'simple'
 
 const getDefaultState = () => ({
   testSandData: 'a-nupha',
+  consentPolicyFlag: '',
+  z:'registerConsent',
 })
 // initial state
 const state = Object.assign(getDefaultState())
