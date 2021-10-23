@@ -7,10 +7,10 @@
                     <v-card shaped flat>
                         <v-form>
                             <div class="
-                      d-flex
-                      flex-column
-                      align-center
-                    ">
+                            d-flex
+                            flex-column
+                            align-center
+                            ">
                             </div>
 
                             <v-layout align-content-center style="color: #0277bd;">
@@ -68,7 +68,7 @@
                                         <v-flex md12>
                                             <v-text-field :label="lableEmail" :placeholder="placeholderEmail" outlined dense :rules="rulesEmail" :counter="50" :maxlength="50" v-model="Email"></v-text-field>
                                         </v-flex>
-                                        
+
                                         <v-layout align-content-center style="color: #0277bd; font-size: 12px; margin-top:-20px;">
                                             <v-flex class="d-flex justify-left pa-1 mx-auto">
                                                 * โปรดตรวจสอบความถูกต้อง<br>เมื่อท่านกดยืนยันข้อมูลจะไม่สามารถกลับมาแก้ไขได้
