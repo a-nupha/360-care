@@ -25,6 +25,8 @@ import { mapState } from "vuex";
 import { sync } from "vuex-pathify";
 import registerConsent from './components/registerConsent.vue';
 import applicationFrom from './components/applicationFrom.vue';
+import productPackage from './components/productPackage.vue';
+
 
 
 
@@ -34,6 +36,7 @@ export default {
   components: {
     registerConsent,
     applicationFrom,
+    productPackage,
   },
   computed: {
     ...mapState({

@@ -87,7 +87,7 @@
         </v-layout>
         <v-layout mt-5>
             <v-flex ma-2 mt-5 mb-2>
-                <v-btn block depressed elevation="6" rounded x-large color="primary">
+                <v-btn block depressed @click="submitForm()" elevation="6" rounded x-large color="primary">
                     ยอมรับ
                 </v-btn>
             </v-flex>
@@ -212,13 +212,14 @@ export default {
                 this.lablelastName = 'lastName';
                 this.lablePid = 'passport';
                 this.lableTel = 'telephone number';
-
-                this.placeholderTel = 'Please specify your Passport'
+                this.placeholderTel = 'Please specify your Passport';
             }
         },
-        testComit(){
-            console.log("tesst")
+        submitForm(){
+            console.log("submitForm")
+            this.z = 'productPackage';
         }
+
 
     },
 
