@@ -216,6 +216,9 @@ export default {
                 this.placeholderTel = 'Please specify your Passport'
             }
         },
+        testComit(){
+            
+        }
 
     },
 
