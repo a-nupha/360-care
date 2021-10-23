@@ -217,7 +217,7 @@ export default {
             }
         },
         testComit(){
-            
+            console.log("tesst")
         }
 
     },
