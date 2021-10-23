@@ -6,11 +6,7 @@
                 <v-container>
                     <v-card shaped flat>
                         <v-form>
-                            <div class="
-                            d-flex
-                            flex-column
-                            align-center
-                            ">
+                            <div class=" d-flex flex-column align-center">
                             </div>
 
                             <v-layout align-content-center style="color: #0277bd;">
